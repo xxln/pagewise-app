@@ -147,6 +147,11 @@ footer a { color: var(--muted); }
 .cmd { display: flex; gap: 10px; align-items: center; background: #1d2433; color: #e8ecf3; border-radius: 10px; padding: 10px 10px 10px 14px; }
 .cmd code { background: none; color: inherit; padding: 0; flex: 1; min-width: 0; overflow-x: auto; white-space: nowrap; }
 .cmd .copy { border: 0; border-radius: 8px; padding: 6px 12px; background: var(--yellow); color: #1d2433; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; }
+/* A command in a narrow card: the command wraps at its spaces and the Copy button sits under it. */
+.card .cmd { flex-wrap: wrap; margin-top: 10px; }
+.card .cmd code { white-space: normal; overflow-wrap: anywhere; flex-basis: 100%; font-size: 14px; }
+.card .cmd .copy { margin-left: auto; }
+.card .hash + p { margin-top: 12px; }
 
 @media (max-width: 860px) {
   .open-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }

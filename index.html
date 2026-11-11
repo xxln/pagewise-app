@@ -254,6 +254,12 @@
         <h3><span class="en">Check the download</span><span class="zh">核对下载文件</span></h3>
         <p><span class="en">SHA-256 of Pagewise-0.2.3.dmg:</span><span class="zh">Pagewise-0.2.3.dmg 的 SHA-256：</span></p>
         <p class="hash">0d91f56912d6de8234404052066ff94cabc28757f4c5d4bff6a3554645e3e3b3</p>
+        <p><span class="en">To check it, paste this in <b>Terminal</b> and compare the result with the line above (change the path if you saved the file elsewhere):</span>
+           <span class="zh">核对方法：在“终端”里粘贴下面这一行，把结果和上面那一行比较（如果文件不在“下载”文件夹里，请改成实际路径）：</span></p>
+        <div class="cmd">
+          <code id="checksum">shasum -a 256 ~/Downloads/Pagewise-0.2.3.dmg</code>
+          <button type="button" class="copy" data-copy="checksum"><span class="en">Copy</span><span class="zh">复制</span></button>
+        </div>
       </div>
     </div>
     <div class="cta" style="margin-top:44px">
