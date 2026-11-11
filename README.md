@@ -11,4 +11,4 @@ This repository holds the Pagewise website and the free beta downloads. The app'
 
 The beta is not yet notarized by Apple: the first time you open it, macOS asks you to confirm once. The steps are on the website under *Install*.
 
-© 2026 Xiulin Xu. All rights reserved. Pagewise is free to download and use during the beta; please share a link to the website rather than the file.
+© 2026 Xiulin Xu. All rights reserved.
