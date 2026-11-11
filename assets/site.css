@@ -82,8 +82,15 @@ header .btn { padding: 7px 14px; font-size: 15px; }
 .hero h1 { font-size: clamp(34px, 5.6vw, 60px); line-height: 1.12; margin: 18px auto 14px; max-width: 900px; letter-spacing: -0.01em; }
 .hero p.lead { font-size: clamp(17px, 2.1vw, 21px); max-width: 760px; margin: 0 auto 30px; opacity: 0.94; }
 .meta { font-size: 14px; opacity: 0.85; margin: 14px 0 6px; }
-.hero a.small { color: #fff; font-size: 14px; opacity: 0.9; }
-.video { margin: 46px auto 0; max-width: 1000px; border-radius: 14px 14px 0 0; overflow: hidden; box-shadow: 0 -4px 40px rgba(0, 0, 0, 0.25); background: #000; }
+.notice { max-width: 760px; margin: 18px auto 0; padding: 12px 16px; border-radius: 12px; background: rgba(255, 255, 255, 0.12); border: 1px solid rgba(255, 255, 255, 0.25); font-size: 15px; line-height: 1.55; }
+.notice a { color: #fff; }
+.caption { font-size: 14px; opacity: 0.85; margin: 12px 0 0; padding-bottom: 28px; }
+.video { position: relative; margin: 40px auto 0; max-width: 1000px; border-radius: 14px; overflow: hidden; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3); background: #000; }
+.video .play { position: absolute; inset: 0; margin: auto; width: 88px; height: 88px; border-radius: 50%; border: 0; cursor: pointer;
+  background: rgba(255, 205, 40, 0.95); color: #1d2433; display: grid; place-items: center; box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35); }
+.video .play svg { width: 40px; height: 40px; margin-left: 6px; }
+.video .play:hover { transform: scale(1.05); }
+.video.playing .play { display: none; }
 .video video { width: 100%; height: auto; }
 
 /* sections */

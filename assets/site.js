@@ -10,6 +10,13 @@
     });
     var t = document.querySelector('meta[name="title-' + lang + '"]');
     if (t) document.title = t.content;
+    // Subtitles: Chinese shown on the Chinese page (the narration is English); off on the English page.
+    document.querySelectorAll('video').forEach(function (v) {
+      for (var i = 0; i < v.textTracks.length; i++) {
+        var tr = v.textTracks[i];
+        tr.mode = (lang === 'zh' && tr.language === 'zh') ? 'showing' : 'disabled';
+      }
+    });
   }
   // ?lang=zh or ?lang=en in a shared link wins, then a remembered choice, then the browser's language.
   var param = (location.search.match(/[?&]lang=(zh|en)\b/) || [])[1];
@@ -20,9 +27,14 @@
     document.querySelectorAll('.lang button').forEach(function (b) {
       b.addEventListener('click', function () { set(b.dataset.lang); remember(b.dataset.lang); });
     });
-    // No moving video for people who prefer less motion.
-    if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      document.querySelectorAll('video[autoplay]').forEach(function (v) { v.pause(); v.removeAttribute('autoplay'); v.controls = true; });
-    }
+    // The big play button starts the introduction; it hides while the video plays.
+    document.querySelectorAll('.video').forEach(function (box) {
+      var v = box.querySelector('video'), b = box.querySelector('.play');
+      if (!v || !b) return;
+      b.addEventListener('click', function () { v.play(); });
+      v.addEventListener('play', function () { box.classList.add('playing'); });
+      v.addEventListener('ended', function () { box.classList.remove('playing'); });
+    });
+    set(start);   // tracks exist now
   });
 })();
