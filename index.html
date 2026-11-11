@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pagewise: find the page, not just the book</title>
+<meta name="title-en" content="Pagewise: find the page, not just the book">
+<meta name="title-zh" content="Pagewise：不只找到书，更找到那一页">
+<meta name="description" content="A free Mac app (beta) for your library of PDFs: search inside every document and jump straight to the page, in any language. Catalogue, inbox, phone access and AI agents.">
+<meta property="og:title" content="Pagewise: find the page, not just the book">
+<meta property="og:description" content="A free Mac app (beta) for your library of PDFs: search inside every document and jump straight to the page.">
+<meta property="og:image" content="https://xxln.github.io/pagewise-app/assets/social-card.png">
+<meta property="og:url" content="https://xxln.github.io/pagewise-app/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/icon-256.png">
+<link rel="apple-touch-icon" href="assets/icon-256.png">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/site.js"></script>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#"><img src="assets/icon-256.png" alt="">Pagewise</a>
+    <nav class="links">
+      <a href="#features"><span class="en">Features</span><span class="zh">功能</span></a>
+      <a href="#install"><span class="en">Install</span><span class="zh">安装</span></a>
+      <a href="#privacy"><span class="en">Privacy</span><span class="zh">隐私</span></a>
+      <a href="#beta"><span class="en">Beta</span><span class="zh">测试版</span></a>
+    </nav>
+    <span class="spacer"></span>
+    <span class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="zh" aria-pressed="false">中文</button>
+    </span>
+    <a class="btn" href="https://github.com/xxln/pagewise-app/releases/download/v0.2.0/Pagewise-0.2.0.dmg">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>
+      <span class="label"><span class="en">Download</span><span class="zh">下载</span></span>
+    </a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <span class="pill"><span class="en">Free beta for Mac</span><span class="zh">Mac 免费测试版</span></span>
+    <h1>
+      <span class="en">Find the page, not just the book.</span>
+      <span class="zh">不只找到书，更找到那一页。</span>
+    </h1>
+    <p class="lead">
+      <span class="en">Pagewise is a Mac app for your library of PDFs. It searches inside every document and opens the PDF at the right page, with your search words highlighted.</span>
+      <span class="zh">Pagewise 是一款管理 PDF 资料库的 Mac 应用：在所有文档里全文搜索，点一下页码，PDF 就在那一页打开，搜索词高亮显示。</span>
+    </p>
+    <a class="btn big" href="https://github.com/xxln/pagewise-app/releases/download/v0.2.0/Pagewise-0.2.0.dmg">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>
+      <span class="en">Download for Mac, free</span><span class="zh">免费下载 Mac 版</span>
+    </a>
+    <p class="meta">
+      <span class="en">Version 0.2.0 beta · macOS 14 Sonoma or later · Apple silicon and Intel · 15 MB</span>
+      <span class="zh">版本 0.2.0 测试版 · macOS 14 或更高版本 · Apple 芯片和 Intel · 15 MB</span>
+    </p>
+    <a class="small" href="#install"><span class="en">The first time you open it, macOS asks you to confirm once: see how</span><span class="zh">第一次打开时 macOS 需要你确认一次：看看怎么做</span></a>
+    <div class="video">
+      <video src="assets/intro.mp4" poster="assets/intro-poster.jpg" autoplay muted loop playsinline preload="metadata"
+             aria-label="A 26-second tour of Pagewise"></video>
+    </div>
+  </div>
+</div>
+
+<section id="features">
+  <div class="wrap">
+    <div class="bar"></div>
+    <h2><span class="en">Your PDFs, searchable to the page</span><span class="zh">你的 PDF，搜到每一页</span></h2>
+    <p class="sub">
+      <span class="en">Books, papers, lecture notes and standards in one private library on your Mac, with a catalogue you own.</span>
+      <span class="zh">书、论文、讲义、标准，都放进你 Mac 上的私人资料库，目录完全归你所有。</span>
+    </p>
+
+    <div class="features">
+    <div class="feature">
+      <div class="text">
+        <h3><span class="en">Search inside every page</span><span class="zh">每一页都能搜</span></h3>
+        <p><span class="en">Full-text search across every document, with the matching passages and their page numbers. Phrases, OR, NOT, prefix* and NEAR. Scanned pages can be read with Live Text.</span>
+           <span class="zh">在所有文档里全文搜索，列出命中的段落和页码。支持短语、OR、NOT、前缀* 和 NEAR。扫描版的页面可以用“实况文本”识别。</span></p>
+      </div>
+      <img class="shot" src="assets/1-search.png" alt="Search results with highlighted passages and page numbers" loading="lazy" width="969" height="734">
+    </div>
+
+    <div class="feature">
+      <div class="text">
+        <h3><span class="en">One click to the page</span><span class="zh">一点就到那一页</span></h3>
+        <p><span class="en">Click a page number and the PDF opens at that page, with your search words highlighted.</span>
+           <span class="zh">点击页码，PDF 就在那一页打开，搜索词高亮显示。</span></p>
+      </div>
+      <img class="shot" src="assets/2-page.png" alt="A PDF opened at the matching page with the search words highlighted" loading="lazy" width="811" height="769">
+    </div>
+
+    <div class="feature">
+      <div class="text">
+        <h3><span class="en">Any language</span><span class="zh">任何语言</span></h3>
+        <p><span class="en">Chinese, Japanese and Korean included, and mixed searches such as <code>"right triangle" OR 句股</code>.</span>
+           <span class="zh">中文、日文、韩文都能搜，也能中英混合搜索，例如 <code>"right triangle" OR 句股</code>。</span></p>
+      </div>
+      <img class="shot" src="assets/3-languages.png" alt="Searching a classical Chinese text" loading="lazy" width="989" height="749">
+    </div>
+
+    <div class="feature">
+      <div class="text">
+        <h3><span class="en">New files, catalogued for you</span><span class="zh">新文件，自动编目</span></h3>
+        <p><span class="en">Drag new files into the Inbox. Pagewise reads their metadata, finds exact duplicates and suggests the title, authors, subject and file name. An AI model can fill in the rest: Apple's on-device model, or a service of your choice with your own API key.</span>
+           <span class="zh">把新文件拖进收件箱。Pagewise 读取文件信息、找出完全相同的重复文件，并建议标题、作者、学科和文件名。其余内容可以交给 AI 模型补全：用 Apple 的本机模型，或用你自己 API 密钥的其他服务。</span></p>
+      </div>
+      <img class="shot" src="assets/4-inbox.png" alt="The Inbox with a suggested catalogue entry" loading="lazy" width="989" height="749">
+    </div>
+
+    <div class="feature">
+      <div class="text">
+        <h3><span class="en">On your phone</span><span class="zh">在手机上用</span></h3>
+        <p><span class="en">Scan a QR code, then search and read your library on your iPhone or iPad from anywhere: privately through Tailscale, served from your Mac.</span>
+           <span class="zh">扫一个二维码，就能在 iPhone 或 iPad 上随时随地搜索和阅读你的资料库：通过 Tailscale 私密连接，由你的 Mac 提供服务。</span></p>
+      </div>
+      <img class="shot dark" src="assets/5-phone.png" alt="Phone access set-up and search on an iPhone" loading="lazy" width="940" height="810">
+    </div>
+
+    <div class="feature">
+      <div class="text">
+        <h3><span class="en">Ready for AI agents</span><span class="zh">AI 助手也能用</span></h3>
+        <p><span class="en">An MCP server and a JSON API let AI assistants search your library, read the relevant pages and cite them. A <code>pagewise</code> command is included for scripts.</span>
+           <span class="zh">内置 MCP 服务器和 JSON API：AI 助手可以搜索你的资料库、阅读相关页面并注明出处。另附 <code>pagewise</code> 命令，供脚本使用。</span></p>
+      </div>
+      <img class="shot dark" src="assets/6-agents.png" alt="An AI assistant calling Pagewise's search tool" loading="lazy" width="940" height="740">
+    </div>
+    </div>
+  </div>
+</section>
+
+<section id="privacy" class="alt">
+  <div class="wrap">
+    <div class="bar"></div>
+    <h2><span class="en">Your documents stay on your Mac</span><span class="zh">你的文档留在你的 Mac 上</span></h2>
+    <p class="sub"><span class="en">No account, no analytics, no tracking.</span><span class="zh">无需账号，没有统计，不追踪。</span></p>
+    <div class="cards">
+      <div class="card">
+        <h3><span class="en">A catalogue you own</span><span class="zh">目录归你所有</span></h3>
+        <p><span class="en">Plain Markdown (<code>INDEX.md</code> per subject area) beside your files: readable and editable anywhere, easy to keep in Git.</span>
+           <span class="zh">纯 Markdown 文件（每个学科一个 <code>INDEX.md</code>），就放在你的文件旁边：任何地方都能读、能改，也方便用 Git 保存。</span></p>
+      </div>
+      <div class="card">
+        <h3><span class="en">Private by default</span><span class="zh">默认就是私密的</span></h3>
+        <p><span class="en">Your documents, catalogue and search index stay in the folder you choose. Live Text and Apple's on-device model run on your Mac.</span>
+           <span class="zh">文档、目录和搜索索引都留在你选择的文件夹里。“实况文本”和 Apple 本机模型都在你的 Mac 上运行。</span></p>
+      </div>
+      <div class="card">
+        <h3><span class="en">Only what you turn on</span><span class="zh">只在你开启时</span></h3>
+        <p><span class="en">Data leaves your Mac only if you choose a cloud AI service (then only the first pages of the file you ask about) or turn on phone access (then only to your own devices).</span>
+           <span class="zh">只有你选用云端 AI 服务（只发送你要求分析的那个文件的前几页），或开启手机访问（只发送到你自己的设备）时，才会有数据离开你的 Mac。</span></p>
+      </div>
+    </div>
+    <p class="note" style="margin-top:22px"><a href="privacy.html"><span class="en">Read the privacy policy</span><span class="zh">阅读隐私政策</span></a></p>
+  </div>
+</section>
+
+<section id="install">
+  <div class="wrap">
+    <div class="bar"></div>
+    <h2><span class="en">Install</span><span class="zh">安装</span></h2>
+    <p class="sub"><span class="en">Pagewise needs macOS 14 Sonoma or later, on Apple silicon or Intel.</span><span class="zh">需要 macOS 14 或更高版本，Apple 芯片或 Intel 均可。</span></p>
+    <ol class="steps">
+      <li><span class="en"><a href="https://github.com/xxln/pagewise-app/releases/download/v0.2.0/Pagewise-0.2.0.dmg">Download Pagewise-0.2.0.dmg</a> and open it.</span>
+          <span class="zh"><a href="https://github.com/xxln/pagewise-app/releases/download/v0.2.0/Pagewise-0.2.0.dmg">下载 Pagewise-0.2.0.dmg</a> 并打开。</span></li>
+      <li><span class="en">Drag <b>Pagewise</b> onto <b>Applications</b>.</span><span class="zh">把 <b>Pagewise</b> 拖到 <b>应用程序</b>（Applications）。</span></li>
+      <li>
+        <span class="en">Open Pagewise. This beta is not yet notarized by Apple, so macOS asks you to confirm once:</span>
+        <span class="zh">打开 Pagewise。这个测试版还没有经过 Apple 公证，所以 macOS 会请你确认一次：</span>
+        <ul>
+          <li><span class="en"><b>macOS 15 Sequoia or later:</b> when macOS says it cannot verify the app, click <b>Done</b> (not <i>Move to Trash</i>). Open <b>System Settings › Privacy &amp; Security</b>, scroll down to <i>Security</i>, click <b>Open Anyway</b> next to “Pagewise was blocked…”, and confirm with your password or Touch ID. Open Pagewise again and click <b>Open</b>.</span>
+              <span class="zh"><b>macOS 15 及以上：</b>提示无法验证时，先点“完成”（不要选“移到废纸篓”）。打开“系统设置 › 隐私与安全性”，在“安全性”处点“仍要打开”，用密码或触控 ID 确认。再打开 Pagewise，点“打开”。</span></li>
+          <li><span class="en"><b>macOS 14 Sonoma:</b> Control-click (or right-click) Pagewise in Applications, choose <b>Open</b>, then click <b>Open</b>.</span>
+              <span class="zh"><b>macOS 14：</b>在“应用程序”中按住 Control 点按（或右键点按）Pagewise，选“打开”，再点“打开”。</span></li>
+        </ul>
+        <span class="note"><span class="en">After that it opens normally.</span><span class="zh">之后就能正常打开了。</span></span>
+      </li>
+      <li><span class="en">Click <b>Try the Demo Library</b> to see what Pagewise does, or <b>New Library…</b> for your own documents. The user guide, in English and Chinese, is in the Help menu.</span>
+          <span class="zh">先点 <b>Try the Demo Library</b> 看看示例资料库，或点 <b>New Library…</b> 管理你自己的文档。“帮助”菜单里有中英文使用指南。</span></li>
+    </ol>
+    <p class="note" style="margin-top:22px">
+      <span class="en">Optional: AI suggestions use Apple's on-device model (macOS 26 with Apple Intelligence), an API key for DeepSeek, MiniMax, Anthropic or another OpenAI-compatible service, or Ollama on your Mac. Phone access needs Tailscale on your Mac and your phone.</span>
+      <span class="zh">可选：AI 建议可以用 Apple 本机模型（需 macOS 26 和 Apple 智能），也可以用 DeepSeek、MiniMax、Anthropic 或其他兼容 OpenAI 接口的服务（需你自己的 API 密钥），或在 Mac 上运行的 Ollama。手机访问需要在 Mac 和手机上都安装 Tailscale。</span>
+    </p>
+  </div>
+</section>
+
+<section id="beta" class="alt">
+  <div class="wrap">
+    <div class="bar"></div>
+    <h2><span class="en">A free beta, with everything included</span><span class="zh">免费测试版，全部功能都包含</span></h2>
+    <p class="sub">
+      <span class="en">Search, the Inbox with AI suggestions, phone access and AI agents are all included and free during the beta. Pagewise is new, so please tell us what goes wrong and what you would like.</span>
+      <span class="zh">搜索、带 AI 建议的收件箱、手机访问和 AI 助手，测试期间全部免费。Pagewise 还很新，遇到问题或有想法，欢迎告诉我们。</span>
+    </p>
+    <div class="cards">
+      <div class="card">
+        <h3><span class="en">Report a problem</span><span class="zh">反馈问题</span></h3>
+        <p><span class="en"><a href="https://github.com/xxln/pagewise-app/issues">Open an issue on GitHub</a> with what you did and what happened.</span>
+           <span class="zh"><a href="https://github.com/xxln/pagewise-app/issues">在 GitHub 上提交问题</a>，写下你做了什么、出现了什么情况。</span></p>
+      </div>
+      <div class="card">
+        <h3><span class="en">Updating</span><span class="zh">更新</span></h3>
+        <p><span class="en">Replace Pagewise in Applications with the new version. Your libraries are ordinary folders and are not touched. <a href="https://github.com/xxln/pagewise-app/releases">All versions</a>.</span>
+           <span class="zh">用新版本替换“应用程序”中的 Pagewise 即可，你的资料库是普通文件夹，不受影响。<a href="https://github.com/xxln/pagewise-app/releases">所有版本</a>。</span></p>
+      </div>
+      <div class="card">
+        <h3><span class="en">Check the download</span><span class="zh">核对下载文件</span></h3>
+        <p><span class="en">SHA-256 of Pagewise-0.2.0.dmg:</span><span class="zh">Pagewise-0.2.0.dmg 的 SHA-256：</span></p>
+        <p class="hash">6a92bb44cd4edf4135994cc927ce39419300e9ee47b26361cf4b6a6740b8d879</p>
+      </div>
+    </div>
+    <div class="cta" style="margin-top:44px">
+      <a class="btn big" href="https://github.com/xxln/pagewise-app/releases/download/v0.2.0/Pagewise-0.2.0.dmg">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>
+        <span class="en">Download for Mac, free</span><span class="zh">免费下载 Mac 版</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>
+      <span class="en">© 2026 xxln. All rights reserved. Free to download and use during the beta; please share a link to this page rather than the file.</span>
+      <span class="zh">© 2026 xxln。保留所有权利。测试期间可免费下载和使用；分享时请分享本页链接，而不是安装文件。</span>
+    </span>
+    <span>
+      <a href="privacy.html"><span class="en">Privacy</span><span class="zh">隐私政策</span></a> ·
+      <a href="https://github.com/xxln/pagewise-app/issues"><span class="en">Report a problem</span><span class="zh">反馈问题</span></a> ·
+      <a href="https://github.com/xxln/pagewise-app/releases"><span class="en">Releases</span><span class="zh">版本</span></a>
+    </span>
+  </div>
+</footer>
+</body>
+</html>
