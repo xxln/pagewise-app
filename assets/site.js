@@ -35,6 +35,17 @@
       v.addEventListener('play', function () { box.classList.add('playing'); });
       v.addEventListener('ended', function () { box.classList.remove('playing'); });
     });
+    // Copy buttons for commands.
+    document.querySelectorAll('button[data-copy]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var el = document.getElementById(b.dataset.copy), text = el ? el.textContent : '';
+        var done = function () { var old = b.innerHTML; b.textContent = root.lang === 'en' ? 'Copied' : '已复制'; setTimeout(function () { b.innerHTML = old; }, 1600); };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(done, function () { selectText(el); });
+        } else { selectText(el); }
+      });
+    });
+    function selectText(el) { var r = document.createRange(); r.selectNodeContents(el); var s = getSelection(); s.removeAllRanges(); s.addRange(r); }
     set(start);   // tracks exist now
   });
 })();

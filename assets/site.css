@@ -137,7 +137,20 @@ footer a { color: var(--muted); }
 .doc h2 { font-size: 22px; margin: 36px 0 8px; }
 .doc .updated { color: var(--muted); margin-top: 0; }
 
+.open-grid { display: grid; grid-template-columns: minmax(0, 300px) minmax(0, 1fr); gap: 44px; align-items: start; }
+.dialog { margin: 0; text-align: center; }
+.dialog img { border-radius: 18px; box-shadow: var(--shadow); margin: 0 auto; }
+.dialog figcaption { color: var(--muted); font-size: 14px; margin-top: 10px; }
+.fallback { margin-top: 22px; padding: 18px 20px; border: 1px dashed var(--line); border-radius: var(--radius); }
+.fallback h3 { margin: 0 0 6px; font-size: 18px; }
+.fallback p { margin: 0 0 12px; color: var(--muted); }
+.cmd { display: flex; gap: 10px; align-items: center; background: #1d2433; color: #e8ecf3; border-radius: 10px; padding: 10px 10px 10px 14px; }
+.cmd code { background: none; color: inherit; padding: 0; flex: 1; min-width: 0; overflow-x: auto; white-space: nowrap; }
+.cmd .copy { border: 0; border-radius: 8px; padding: 6px 12px; background: var(--yellow); color: #1d2433; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; }
+
 @media (max-width: 860px) {
+  .open-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .dialog img { max-width: 280px; }
   nav.links { display: none; }
   .feature, .features .feature:nth-child(even) { grid-template-columns: minmax(0, 1fr); gap: 22px; margin-bottom: 56px; }
   .features .feature:nth-child(even) .text { order: 0; }
