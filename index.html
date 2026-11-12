@@ -6,7 +6,7 @@
 <title>Pagewise: find the page, not just the book</title>
 <meta name="title-en" content="Pagewise: find the page, not just the book">
 <meta name="title-zh" content="Pagewise：不只找到书，更找到那一页">
-<meta name="description" content="A free Mac app (beta) for your library of PDFs: search inside every document and jump straight to the page, in any language. Catalogue, inbox, phone access and AI agents.">
+<meta name="description" content="A free Mac app (beta) for your library of PDFs: search inside every document and jump straight to the page, in any language. AI cataloguing, connected notes, phone access and AI agents.">
 <meta property="og:title" content="Pagewise: find the page, not just the book">
 <meta property="og:description" content="A free Mac app (beta) for your library of PDFs: search inside every document and jump straight to the page.">
 <meta property="og:image" content="https://xxln.github.io/pagewise-app/assets/social-card.png">
@@ -24,6 +24,7 @@
     <a class="brand" href="#"><img src="assets/icon-256.png" alt="">Pagewise</a>
     <nav class="links">
       <a href="#features"><span class="en">Features</span><span class="zh">功能</span></a>
+      <a href="#ai"><span class="en">AI</span><span class="zh">AI</span></a>
       <a href="#install"><span class="en">Install</span><span class="zh">安装</span></a>
       <a href="#privacy"><span class="en">Privacy</span><span class="zh">隐私</span></a>
       <a href="#beta"><span class="en">Beta</span><span class="zh">测试版</span></a>
@@ -33,7 +34,7 @@
       <button type="button" data-lang="en" aria-pressed="true">EN</button>
       <button type="button" data-lang="zh" aria-pressed="false">中文</button>
     </span>
-    <a class="btn" href="https://github.com/xxln/pagewise-app/releases/download/v0.2.6/Pagewise-0.2.6.dmg">
+    <a class="btn" href="https://github.com/xxln/pagewise-app/releases/download/v0.3.0/Pagewise-0.3.0.dmg">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>
       <span class="label"><span class="en">Download</span><span class="zh">下载</span></span>
     </a>
@@ -43,21 +44,22 @@
 <div class="hero">
   <div class="wrap">
     <span class="pill"><span class="en">Free beta for Mac</span><span class="zh">Mac 免费测试版</span></span>
+    <a class="pill link" href="#ai"><span class="en">New: notes that connect →</span><span class="zh">新功能：相互连接的笔记 →</span></a>
     <h1>
       <span class="en">Find the page, not just the book.</span>
       <span class="zh">不只找到书，更找到那一页。</span>
     </h1>
     <p class="lead">
-      <span class="en">Pagewise is a Mac app for your library of PDFs. It searches inside every document and opens the PDF at the right page, with your search words highlighted.</span>
-      <span class="zh">Pagewise 是一款管理 PDF 资料库的 Mac 应用：在所有文档里全文搜索，点一下页码，PDF 就在那一页打开，搜索词高亮显示。</span>
+      <span class="en">Pagewise is a Mac app for your library of PDFs. It searches inside every document and opens the PDF at the right page, with your search words highlighted. It is AI native: it files new books for you, links your reading notes, and lets AI assistants search and cite your pages.</span>
+      <span class="zh">Pagewise 是一款管理 PDF 资料库的 Mac 应用：在所有文档里全文搜索，点一下页码，PDF 就在那一页打开，搜索词高亮显示。它原生支持 AI：自动为新书编目，把阅读笔记连起来，还让 AI 助手搜索并引用你的书页。</span>
     </p>
-    <a class="btn big" href="https://github.com/xxln/pagewise-app/releases/download/v0.2.6/Pagewise-0.2.6.dmg">
+    <a class="btn big" href="https://github.com/xxln/pagewise-app/releases/download/v0.3.0/Pagewise-0.3.0.dmg">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>
       <span class="en">Download for Mac, free</span><span class="zh">免费下载 Mac 版</span>
     </a>
     <p class="meta">
-      <span class="en">Version 0.2.6 beta · macOS 14 Sonoma or later · Apple silicon and Intel · 15 MB</span>
-      <span class="zh">版本 0.2.6 测试版 · macOS 14 或更高版本 · Apple 芯片和 Intel · 15 MB</span>
+      <span class="en">Version 0.3.0 beta · macOS 14 Sonoma or later · Apple silicon and Intel · 16 MB</span>
+      <span class="zh">版本 0.3.0 测试版 · macOS 14 或更高版本 · Apple 芯片和 Intel · 16 MB</span>
     </p>
     <p class="notice">
       <span class="en"><b>First launch:</b> this beta is not yet notarized by Apple, so macOS blocks it the first time. Allow it once in <b>System Settings › Privacy &amp; Security › Open Anyway</b>. <a href="#open">How to open it</a></span>
@@ -156,15 +158,6 @@
 
     <div class="feature">
       <div class="text">
-        <h3><span class="en">New files, catalogued for you</span><span class="zh">新文件，自动编目</span></h3>
-        <p><span class="en">Drag new files into the Inbox. Pagewise reads their metadata, finds exact duplicates and suggests the title, authors, subject and file name. An AI model can fill in the rest: Apple's on-device model, or a service of your choice with your own API key. It reuses the subjects you have, so it does not make a second one with nearly the same name. Rename, merge or add subjects in the sidebar, or drag a document onto another subject, and the folders follow.</span>
-           <span class="zh">把新文件拖进收件箱。Pagewise 读取文件信息、找出完全相同的重复文件，并建议标题、作者、学科和文件名。其余内容可以交给 AI 模型补全：用 Apple 的本机模型，或用你自己 API 密钥的其他服务。它会沿用你已有的学科，不会另建名称几乎相同的学科。在侧边栏里重命名、合并或新建学科，或把文档拖到另一个学科上，对应的文件夹也会跟着改。</span></p>
-      </div>
-      <img class="shot" src="assets/4-inbox.png" alt="The Inbox with a suggested catalogue entry" loading="lazy" width="989" height="749">
-    </div>
-
-    <div class="feature">
-      <div class="text">
         <h3><span class="en">On your phone</span><span class="zh">在手机上用</span></h3>
         <p><span class="en">Scan a QR code, then search and read your library on your iPhone or iPad from anywhere: privately through Tailscale, served from your Mac.</span>
            <span class="zh">扫一个二维码，就能在 iPhone 或 iPad 上随时随地搜索和阅读你的资料库：通过 Tailscale 私密连接，由你的 Mac 提供服务。</span></p>
@@ -172,11 +165,49 @@
       <img class="shot dark" src="assets/5-phone.png" alt="Phone access set-up and search on an iPhone" loading="lazy" width="940" height="810">
     </div>
 
+    </div>
+  </div>
+</section>
+
+<section id="ai" class="alt">
+  <div class="wrap">
+    <div class="bar"></div>
+    <h2><span class="en">AI native, and still yours</span><span class="zh">原生 AI，依然由你掌控</span></h2>
+    <p class="sub">
+      <span class="en">AI files your new books, links your notes and lets assistants answer from your own pages. Apple's on-device model is the default: nothing leaves your Mac unless you choose a cloud service.</span>
+      <span class="zh">AI 帮你给新书编目、把笔记连起来，还让 AI 助手根据你自己的书页回答问题。默认使用 Apple 本机模型：除非你选择云端服务，否则数据不会离开你的 Mac。</span>
+    </p>
+
+    <div class="features">
     <div class="feature">
       <div class="text">
-        <h3><span class="en">Ready for AI agents</span><span class="zh">AI 助手也能用</span></h3>
-        <p><span class="en">An MCP server and a JSON API let AI assistants search your library, read the relevant pages and cite them. A <code>pagewise</code> command is included for scripts.</span>
-           <span class="zh">内置 MCP 服务器和 JSON API：AI 助手可以搜索你的资料库、阅读相关页面并注明出处。另附 <code>pagewise</code> 命令，供脚本使用。</span></p>
+        <h3><span class="en">An AI librarian for new files</span><span class="zh">新文件交给 AI 编目</span></h3>
+        <p><span class="en">Drag new files into the Inbox. An AI model reads the first pages, fills in the title, authors, edition and year, and files each book beside the most similar one you already have, under the subjects you use. You check the entry before anything moves.</span>
+           <span class="zh">把新文件拖进收件箱。AI 模型阅读前几页，填好书名、作者、版次和年份，并把每本书放到你库里最相似的那本书旁边，沿用你已有的学科。文件移动之前，你都可以检查条目。</span></p>
+      </div>
+      <img class="shot" src="assets/4-inbox.png" alt="The Inbox with a suggested catalogue entry" loading="lazy" width="989" height="749">
+    </div>
+
+    <div class="feature">
+      <div class="text">
+        <h3><span class="en">Notes that connect</span><span class="zh">相互连接的笔记</span><span class="new"><span class="en">New</span><span class="zh">新</span></span></h3>
+        <p><span class="en">Select a passage and press ⌃⌘N to write a thought. Each note keeps the time and the exact passage, and one click brings you back to it. #tags and Related link your notes across books. All notes live in one plain Markdown file in your library; your PDFs are never changed.</span>
+           <span class="zh">选中一段文字，按 ⌃⌘N 写下想法。每条笔记都记下时间和原文出处，点一下就回到那一段。#标签 和“相关笔记”把不同书里的笔记连起来。所有笔记都保存在资料库里的一个 Markdown 文件中，PDF 本身不会被修改。</span></p>
+      </div>
+      <img class="shot" src="assets/7-notes.png" alt="Notes listed newest first; one is open at its passage, with a teal mark in the margin" loading="lazy" width="980" height="735">
+    </div>
+
+    <div class="feature">
+      <div class="text">
+        <h3><span class="en">Built for AI agents</span><span class="zh">为 AI 助手而建</span></h3>
+        <p><span class="en">Connect Claude, Codex or any app that speaks MCP. It can search your library, read the pages it needs, cite them, and read your notes. Turn on <b>Serve the library</b> in Settings › Phone &amp; Agents, then, for Claude Code:</span>
+           <span class="zh">连接 Claude、Codex 或任何支持 MCP 的应用：它能搜索你的资料库、阅读需要的页面并注明出处，还能读你的笔记。在“设置 › Phone &amp; Agents”中打开 <b>Serve the library</b>，然后在 Claude Code 中运行：</span></p>
+        <div class="cmd">
+          <code id="mcp">claude mcp add --transport http pagewise http://127.0.0.1:8765/mcp</code>
+          <button type="button" class="copy" data-copy="mcp"><span class="en">Copy</span><span class="zh">复制</span></button>
+        </div>
+        <p><span class="en">Other apps take the same address. A <code>pagewise</code> command is included for scripts.</span>
+           <span class="zh">其他应用填写同一个地址即可。另附 <code>pagewise</code> 命令，供脚本使用。</span></p>
       </div>
       <img class="shot dark" src="assets/6-agents.png" alt="An AI assistant calling Pagewise's search tool" loading="lazy" width="940" height="740">
     </div>
@@ -184,7 +215,7 @@
   </div>
 </section>
 
-<section id="privacy" class="alt">
+<section id="privacy">
   <div class="wrap">
     <div class="bar"></div>
     <h2><span class="en">Your documents stay on your Mac</span><span class="zh">你的文档留在你的 Mac 上</span></h2>
@@ -192,8 +223,8 @@
     <div class="cards">
       <div class="card">
         <h3><span class="en">A catalogue you own</span><span class="zh">目录归你所有</span></h3>
-        <p><span class="en">Plain Markdown (<code>INDEX.md</code> per subject area) beside your files: readable and editable anywhere, easy to keep in Git.</span>
-           <span class="zh">纯 Markdown 文件（每个学科一个 <code>INDEX.md</code>），就放在你的文件旁边：任何地方都能读、能改，也方便用 Git 保存。</span></p>
+        <p><span class="en">Plain Markdown (<code>INDEX.md</code> per subject area, and <code>NOTES.md</code> for your notes) beside your files: readable and editable anywhere, easy to keep in Git. Rename, merge or drag between subjects and the folders follow.</span>
+           <span class="zh">纯 Markdown 文件（每个学科一个 <code>INDEX.md</code>，笔记在 <code>NOTES.md</code>），就放在你的文件旁边：任何地方都能读、能改，也方便用 Git 保存。在学科之间重命名、合并或拖动，文件夹也跟着改。</span></p>
       </div>
       <div class="card">
         <h3><span class="en">Private by default</span><span class="zh">默认就是私密的</span></h3>
@@ -202,22 +233,22 @@
       </div>
       <div class="card">
         <h3><span class="en">Only what you turn on</span><span class="zh">只在你开启时</span></h3>
-        <p><span class="en">Data leaves your Mac only if you choose a cloud AI service (then only the first pages of the file you ask about) or turn on phone access (then only to your own devices).</span>
-           <span class="zh">只有你选用云端 AI 服务（只发送你要求分析的那个文件的前几页），或开启手机访问（只发送到你自己的设备）时，才会有数据离开你的 Mac。</span></p>
+        <p><span class="en">Data leaves your Mac only if you choose a cloud AI service (then only the first pages of the file you ask about, with your subject names and the titles of the few most similar documents) or turn on phone access (then only to your own devices).</span>
+           <span class="zh">只有你选用云端 AI 服务（只发送你要求分析的那个文件的前几页，以及学科名称和最相似的几本文档的标题），或开启手机访问（只发送到你自己的设备）时，才会有数据离开你的 Mac。</span></p>
       </div>
     </div>
     <p class="note" style="margin-top:22px"><a href="privacy.html"><span class="en">Read the privacy policy</span><span class="zh">阅读隐私政策</span></a></p>
   </div>
 </section>
 
-<section id="install">
+<section id="install" class="alt">
   <div class="wrap">
     <div class="bar"></div>
     <h2><span class="en">Install</span><span class="zh">安装</span></h2>
     <p class="sub"><span class="en">Pagewise needs macOS 14 Sonoma or later, on Apple silicon or Intel.</span><span class="zh">需要 macOS 14 或更高版本，Apple 芯片或 Intel 均可。</span></p>
     <ol class="steps">
-      <li><span class="en"><a href="https://github.com/xxln/pagewise-app/releases/download/v0.2.6/Pagewise-0.2.6.dmg">Download Pagewise-0.2.6.dmg</a> and open it.</span>
-          <span class="zh"><a href="https://github.com/xxln/pagewise-app/releases/download/v0.2.6/Pagewise-0.2.6.dmg">下载 Pagewise-0.2.6.dmg</a> 并打开。</span></li>
+      <li><span class="en"><a href="https://github.com/xxln/pagewise-app/releases/download/v0.3.0/Pagewise-0.3.0.dmg">Download Pagewise-0.3.0.dmg</a> and open it.</span>
+          <span class="zh"><a href="https://github.com/xxln/pagewise-app/releases/download/v0.3.0/Pagewise-0.3.0.dmg">下载 Pagewise-0.3.0.dmg</a> 并打开。</span></li>
       <li><span class="en">Drag <b>Pagewise</b> onto <b>Applications</b>.</span><span class="zh">把 <b>Pagewise</b> 拖到 <b>应用程序</b>（Applications）。</span></li>
       <li><span class="en">Open Pagewise. The first time, macOS stops it because this beta is not yet notarized by Apple: allow it once as shown in <a href="#open">Opening Pagewise the first time</a>.</span>
           <span class="zh">打开 Pagewise。因为这个测试版还没有经过 Apple 公证，第一次打开时 macOS 会阻止它：按 <a href="#open">第一次打开 Pagewise</a> 里的步骤允许一次即可。</span></li>
@@ -231,7 +262,7 @@
   </div>
 </section>
 
-<section id="beta" class="alt">
+<section id="beta">
   <div class="wrap">
     <div class="bar"></div>
     <h2><span class="en">A free beta, with everything included</span><span class="zh">免费测试版，全部功能都包含</span></h2>
@@ -252,18 +283,18 @@
       </div>
       <div class="card">
         <h3><span class="en">Check the download</span><span class="zh">核对下载文件</span></h3>
-        <p><span class="en">SHA-256 of Pagewise-0.2.6.dmg:</span><span class="zh">Pagewise-0.2.6.dmg 的 SHA-256：</span></p>
-        <p class="hash">659689a94dc426537bc7d097016144d161e3eaa252b1081cae2956fa9dddf8a5</p>
+        <p><span class="en">SHA-256 of Pagewise-0.3.0.dmg:</span><span class="zh">Pagewise-0.3.0.dmg 的 SHA-256：</span></p>
+        <p class="hash">029d3b60e165b30e9cb2cea6818a46de2215d2dd4c2ba9112471677b09af0c6a</p>
         <p><span class="en">To check it, paste this in <b>Terminal</b> and compare the result with the line above (change the path if you saved the file elsewhere):</span>
            <span class="zh">核对方法：在“终端”里粘贴下面这一行，把结果和上面那一行比较（如果文件不在“下载”文件夹里，请改成实际路径）：</span></p>
         <div class="cmd">
-          <code id="checksum">shasum -a 256 ~/Downloads/Pagewise-0.2.6.dmg</code>
+          <code id="checksum">shasum -a 256 ~/Downloads/Pagewise-0.3.0.dmg</code>
           <button type="button" class="copy" data-copy="checksum"><span class="en">Copy</span><span class="zh">复制</span></button>
         </div>
       </div>
     </div>
     <div class="cta" style="margin-top:44px">
-      <a class="btn big" href="https://github.com/xxln/pagewise-app/releases/download/v0.2.6/Pagewise-0.2.6.dmg">
+      <a class="btn big" href="https://github.com/xxln/pagewise-app/releases/download/v0.3.0/Pagewise-0.3.0.dmg">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>
         <span class="en">Download for Mac, free</span><span class="zh">免费下载 Mac 版</span>
       </a>
