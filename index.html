@@ -34,7 +34,7 @@
       <button type="button" data-lang="en" aria-pressed="true">EN</button>
       <button type="button" data-lang="zh" aria-pressed="false">中文</button>
     </span>
-    <a class="btn" href="https://github.com/xxln/pagewise-app/releases/download/v0.3.0/Pagewise-0.3.0.dmg">
+    <a class="btn" href="https://github.com/xxln/pagewise-app/releases/download/v0.3.1/Pagewise-0.3.1.dmg">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>
       <span class="label"><span class="en">Download</span><span class="zh">下载</span></span>
     </a>
@@ -53,13 +53,13 @@
       <span class="en">Pagewise is a Mac app for your library of PDFs. It searches inside every document and opens the PDF at the right page, with your search words highlighted. It is AI native: it files new books for you, links your reading notes, and lets AI assistants search and cite your pages.</span>
       <span class="zh">Pagewise 是一款管理 PDF 资料库的 Mac 应用：在所有文档里全文搜索，点一下页码，PDF 就在那一页打开，搜索词高亮显示。它原生支持 AI：自动为新书编目，把阅读笔记连起来，还让 AI 助手搜索并引用你的书页。</span>
     </p>
-    <a class="btn big" href="https://github.com/xxln/pagewise-app/releases/download/v0.3.0/Pagewise-0.3.0.dmg">
+    <a class="btn big" href="https://github.com/xxln/pagewise-app/releases/download/v0.3.1/Pagewise-0.3.1.dmg">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>
       <span class="en">Download for Mac, free</span><span class="zh">免费下载 Mac 版</span>
     </a>
     <p class="meta">
-      <span class="en">Version 0.3.0 beta · macOS 14 Sonoma or later · Apple silicon and Intel · 16 MB</span>
-      <span class="zh">版本 0.3.0 测试版 · macOS 14 或更高版本 · Apple 芯片和 Intel · 16 MB</span>
+      <span class="en">Version 0.3.1 beta · macOS 14 Sonoma or later · Apple silicon and Intel · 16 MB</span>
+      <span class="zh">版本 0.3.1 测试版 · macOS 14 或更高版本 · Apple 芯片和 Intel · 16 MB</span>
     </p>
     <p class="notice">
       <span class="en"><b>First launch:</b> this beta is not yet notarized by Apple, so macOS blocks it the first time. Allow it once in <b>System Settings › Privacy &amp; Security › Open Anyway</b>. <a href="#open">How to open it</a></span>
@@ -141,8 +141,8 @@
     <div class="feature">
       <div class="text">
         <h3><span class="en">One click to the page</span><span class="zh">一点就到那一页</span></h3>
-        <p><span class="en">Click a page number and the PDF opens at that page, fitted to the window, with the match marked and your search words highlighted, on scanned pages too. ⌘G goes to the next match; Reading View gives the page the whole window.</span>
-           <span class="zh">点击页码，PDF 就在那一页打开，页面适合窗口宽度，当前命中标出、搜索词高亮显示，扫描页也一样。⌘G 跳到下一个命中；“阅读视图”让页面占满整个窗口。</span></p>
+        <p><span class="en">Click a page number and the PDF opens at that page, fitted to the window, with the match marked and your search words highlighted, on scanned pages too. ⌘G goes to the next match; Reading View gives the page the whole window. EPUB books open in Pagewise too.</span>
+           <span class="zh">点击页码，PDF 就在那一页打开，页面适合窗口宽度，当前命中标出、搜索词高亮显示，扫描页也一样。⌘G 跳到下一个命中；“阅读视图”让页面占满整个窗口。EPUB 电子书也能在 Pagewise 里直接阅读。</span></p>
       </div>
       <img class="shot" src="assets/2-page.png" alt="A PDF opened at the matching page with the search words highlighted" loading="lazy" width="811" height="769">
     </div>
@@ -159,8 +159,8 @@
     <div class="feature">
       <div class="text">
         <h3><span class="en">On your phone</span><span class="zh">在手机上用</span></h3>
-        <p><span class="en">Scan a QR code, then search and read your library on your iPhone or iPad from anywhere: privately through Tailscale, served from your Mac.</span>
-           <span class="zh">扫一个二维码，就能在 iPhone 或 iPad 上随时随地搜索和阅读你的资料库：通过 Tailscale 私密连接，由你的 Mac 提供服务。</span></p>
+        <p><span class="en">Scan a QR code, then search and read your library and your notes on your iPhone or iPad from anywhere: privately through Tailscale, served from your Mac. A note opens at its page, with the passage marked.</span>
+           <span class="zh">扫一个二维码，就能在 iPhone 或 iPad 上随时随地搜索和阅读你的资料库和笔记：通过 Tailscale 私密连接，由你的 Mac 提供服务。点一条笔记，就打开那一页并标出原文。</span></p>
       </div>
       <img class="shot dark" src="assets/5-phone.png" alt="Phone access set-up and search on an iPhone" loading="lazy" width="940" height="810">
     </div>
@@ -247,8 +247,8 @@
     <h2><span class="en">Install</span><span class="zh">安装</span></h2>
     <p class="sub"><span class="en">Pagewise needs macOS 14 Sonoma or later, on Apple silicon or Intel.</span><span class="zh">需要 macOS 14 或更高版本，Apple 芯片或 Intel 均可。</span></p>
     <ol class="steps">
-      <li><span class="en"><a href="https://github.com/xxln/pagewise-app/releases/download/v0.3.0/Pagewise-0.3.0.dmg">Download Pagewise-0.3.0.dmg</a> and open it.</span>
-          <span class="zh"><a href="https://github.com/xxln/pagewise-app/releases/download/v0.3.0/Pagewise-0.3.0.dmg">下载 Pagewise-0.3.0.dmg</a> 并打开。</span></li>
+      <li><span class="en"><a href="https://github.com/xxln/pagewise-app/releases/download/v0.3.1/Pagewise-0.3.1.dmg">Download Pagewise-0.3.1.dmg</a> and open it.</span>
+          <span class="zh"><a href="https://github.com/xxln/pagewise-app/releases/download/v0.3.1/Pagewise-0.3.1.dmg">下载 Pagewise-0.3.1.dmg</a> 并打开。</span></li>
       <li><span class="en">Drag <b>Pagewise</b> onto <b>Applications</b>.</span><span class="zh">把 <b>Pagewise</b> 拖到 <b>应用程序</b>（Applications）。</span></li>
       <li><span class="en">Open Pagewise. The first time, macOS stops it because this beta is not yet notarized by Apple: allow it once as shown in <a href="#open">Opening Pagewise the first time</a>.</span>
           <span class="zh">打开 Pagewise。因为这个测试版还没有经过 Apple 公证，第一次打开时 macOS 会阻止它：按 <a href="#open">第一次打开 Pagewise</a> 里的步骤允许一次即可。</span></li>
@@ -283,18 +283,18 @@
       </div>
       <div class="card">
         <h3><span class="en">Check the download</span><span class="zh">核对下载文件</span></h3>
-        <p><span class="en">SHA-256 of Pagewise-0.3.0.dmg:</span><span class="zh">Pagewise-0.3.0.dmg 的 SHA-256：</span></p>
-        <p class="hash">029d3b60e165b30e9cb2cea6818a46de2215d2dd4c2ba9112471677b09af0c6a</p>
+        <p><span class="en">SHA-256 of Pagewise-0.3.1.dmg:</span><span class="zh">Pagewise-0.3.1.dmg 的 SHA-256：</span></p>
+        <p class="hash">f74ec35c7d7463d8301bb3431b015ffdb71d4d3dcab2f81da0fb881c4e300735</p>
         <p><span class="en">To check it, paste this in <b>Terminal</b> and compare the result with the line above (change the path if you saved the file elsewhere):</span>
            <span class="zh">核对方法：在“终端”里粘贴下面这一行，把结果和上面那一行比较（如果文件不在“下载”文件夹里，请改成实际路径）：</span></p>
         <div class="cmd">
-          <code id="checksum">shasum -a 256 ~/Downloads/Pagewise-0.3.0.dmg</code>
+          <code id="checksum">shasum -a 256 ~/Downloads/Pagewise-0.3.1.dmg</code>
           <button type="button" class="copy" data-copy="checksum"><span class="en">Copy</span><span class="zh">复制</span></button>
         </div>
       </div>
     </div>
     <div class="cta" style="margin-top:44px">
-      <a class="btn big" href="https://github.com/xxln/pagewise-app/releases/download/v0.3.0/Pagewise-0.3.0.dmg">
+      <a class="btn big" href="https://github.com/xxln/pagewise-app/releases/download/v0.3.1/Pagewise-0.3.1.dmg">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>
         <span class="en">Download for Mac, free</span><span class="zh">免费下载 Mac 版</span>
       </a>
