@@ -80,6 +80,7 @@ header .btn { padding: 7px 14px; font-size: 15px; }
 .hero .wrap { text-align: center; }
 .pill { display: inline-block; font-size: 14px; font-weight: 600; letter-spacing: 0.02em; padding: 4px 12px; border-radius: 999px; background: rgba(255, 255, 255, 0.16); border: 1px solid rgba(255, 255, 255, 0.28); }
 .hero h1 { font-size: clamp(34px, 5.6vw, 60px); line-height: 1.12; margin: 18px auto 14px; max-width: 900px; letter-spacing: -0.01em; }
+.hero p.tagline { font-size: clamp(19px, 2.5vw, 26px); font-weight: 600; max-width: 800px; margin: -4px auto 18px; opacity: 0.97; }
 .hero p.lead { font-size: clamp(17px, 2.1vw, 21px); max-width: 760px; margin: 0 auto 30px; opacity: 0.94; }
 .meta { font-size: 14px; opacity: 0.85; margin: 14px 0 6px; }
 .notice { max-width: 760px; margin: 18px auto 0; padding: 12px 16px; border-radius: 12px; background: rgba(255, 255, 255, 0.12); border: 1px solid rgba(255, 255, 255, 0.25); font-size: 15px; line-height: 1.55; }
