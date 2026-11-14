@@ -10,11 +10,13 @@
     });
     var t = document.querySelector('meta[name="title-' + lang + '"]');
     if (t) document.title = t.content;
-    // Subtitles: Chinese shown on the Chinese page (the narration is English); off on the English page.
+    // Subtitles: Chinese shown on the Chinese page (the narration is English); off on the English
+    // page, except for a video without sound (data-silent), whose subtitles carry the words.
     document.querySelectorAll('video').forEach(function (v) {
+      var silent = v.hasAttribute('data-silent');
       for (var i = 0; i < v.textTracks.length; i++) {
         var tr = v.textTracks[i];
-        tr.mode = (lang === 'zh' && tr.language === 'zh') ? 'showing' : 'disabled';
+        tr.mode = (tr.language === lang && (lang === 'zh' || silent)) ? 'showing' : 'disabled';
       }
     });
   }
