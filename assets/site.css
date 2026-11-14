@@ -107,6 +107,8 @@ section h2 { font-size: clamp(28px, 3.6vw, 40px); line-height: 1.2; margin: 0 0 
 .features .feature:nth-child(even) .text { order: 2; }
 .feature h3 { font-size: 26px; margin: 0 0 10px; line-height: 1.25; }
 .feature p { margin: 0; color: var(--muted); }
+.feature ul.kinds { margin: 10px 0 12px; padding-left: 20px; color: var(--muted); }
+.feature ul.kinds li { margin: 4px 0; }
 .shot { border-radius: 12px; box-shadow: var(--shadow); background: var(--card); }
 .shot.dark { background: transparent; }
 
