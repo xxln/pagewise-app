@@ -102,6 +102,7 @@ section h2 { font-size: clamp(28px, 3.6vw, 40px); line-height: 1.2; margin: 0 0 
 
 .feature { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr); gap: 48px; align-items: center; margin: 0 0 76px; }
 .feature > * { min-width: 0; }
+.feature[id] { scroll-margin-top: 84px; }
 .feature:last-child { margin-bottom: 0; }
 .features .feature:nth-child(even) { grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); }
 .features .feature:nth-child(even) .text { order: 2; }
